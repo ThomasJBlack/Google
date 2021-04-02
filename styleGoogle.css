@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Trebuchet MS", sans-serif;
+}
+.header {
+	display: flex;
+}
+
+.main {
+	display: flex;
+}
+
+.footer {
+	width: 100%;
+	display: flex;
+}
+
+h1 {
+	display: flex;
+}
