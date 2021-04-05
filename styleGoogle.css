@@ -6,18 +6,19 @@ body {
 	font-family: "Trebuchet MS", sans-serif;
 }
 .header {
-	display: flex;
+	display: grid;
 }
 
 .main {
-	display: flex;
+	display: grid;
 }
 
 .footer {
 	width: 100%;
-	display: flex;
+	display: grid;
 }
 
 h1 {
 	display: flex;
 }
+
