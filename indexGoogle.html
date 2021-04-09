@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styleGoogle.css" />
+</head>
+
+<body>
     <header>
-      <div class="header">
-        (Header)
-        <div class="left">
-          <div class="about underlined-button">About</div>
-          <div class="store underlined-button">Store</div>
+        <div class="header-left">
+            <a class="about underlined">About</a>
+            <a class="store underlined">Store</a>
         </div>
 
-        <div class="right">
-          <div class="gmail underlined-button">Gmail</div>
-          <div class="images underlined-button">Images</div>
-          <div class="apps icon">
-            <img
-              <img
-              src="./Images/Screen Shot 2021-04-03 at 12.04.22 AM.png"
-              alt="Apps Image"
-              width="100"
-              height="100"
-            />
-          </div>
-          <div class="google-account icon">Goodle Account Icon</div>
+        <div class="header-right">
+            <a class="gmail underlined">Gmail</a>
+            <a class="images underlined">Images</a>
+
+            <!-- <div class="apps"> need this popup in a div? -->
+                <a class="apps">
+                    <img class="apps-image" src="./Images/apps.svg" alt="Apps Image" height="30px" />
+                    <div class="apps-popup popup" hidden id="apps-popup-popup">Google apps</div> <!-- hover popup - where does this go?-->
+                </a>
+            <!-- </div> -->
+            <!-- <div class="account"> need this popup in a div? -->
+                <a class="google-account">
+                    <img class="google-account-image" src="./Images/account.png" alt="Account Image" height="35px" />
+                    <div class="google-account-popup popup" hidden id="google-account-popup" ><span id="inline-text"></span>Google account</span><span>Thomas Black</span><span>Example@gmail.com</span></div> <!-- hover popup - where does this go?-->
+                </a>
+            <!-- </div> -->
         </div>
-      </div>
     </header>
 
-    <main class="main">
-      (main)
-      <div class="google-image">Google Image</div>
-      <div>
-        <div class="search-bar">Search Google or type a URL</div>
-        <div class="voice-button">Search by voice</div>
-      </div>
-      <div class="search bordered-button">Google Search</div>
-      <div class="lucky bordered-button">I'm Feeling Lucky</div>
-      <div class="tips underlined-button">
-        Helpful tips to fact check information online
-      </div>
-    </main>
+    <div class="upper-main">
+        <img class="google-image" src="./Images/google.png" alt="Apps Image" height="110px" />
+    </div>
 
+    <div class="middle-main">
+        <div class="search-bar">
+            <img class="magnifying-glass" src="./Images/magnifying-glass.png" alt="Magnifying Glass Image" height="23px" />
+
+            <input class="search-input" >
+
+            <div class="voice"> <!-- need this popup in a div?-->
+                <a class="microphone-icon">
+                    <img src="./Images/voice.png" alt="microphone Image" height="28px" />
+                    <div class="voice-popup popup" hidden id="microphone-popup">Search by voice</div> <!-- hover popup - where does this go?-->
+                </a>
+            </div>
+        </div>
+        <div class="two-center-inputs">
+            <input class="search input" value="Google Search"></input>
+            <input class="lucky input" value="I'm Feeling Lucky"></input>
+        </div>
+    </div>
+
+    <div class="lower-main">
+        <a class="tips underlined">Helpful tips to fact check information online</a>
+    </div>
     <footer>
-      <div class="footer">
-        <div class="left">
-          (left)
-          <div class="advertising underlined-button">Advertising</div>
-          <div class="business underlined-button">Business</div>
-          <div class="how-search-works underlined-button">How Search Works</div>
+        <div class="footer-left">
+            <a class="advertising underlined">Advertising</a>
+            <a class="business underlined">Business</a>
+            <a class="how-search-works underlined">How Search Works</a>
         </div>
-        <div class="center">
-          (center)
-          <div class="carbon underlined-button">Carbon neutral since 2007</div>
+
+        <div class="footer-center">
+            <img src="./Images/carbon.png" alt="Carbon Neutral Image" height="20px" />
+            <a class="carbon underlined">Carbon neutral since 2007</a>
         </div>
-        <div class="right">
-          (right)
-          <div class="privacy underlined-button">Privacy</div>
-          <div class="terms underlined-button">Terms</div>
-          <div class="settings underlined-button">Settings</div>
+        
+        <div class="footer-right">
+            <a class="privacy underlined">Privacy</a>
+            <a class="terms underlined">Terms</a>
+            <a class="settings underlined">Settings</a>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
 </html>
